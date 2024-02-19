@@ -1,0 +1,208 @@
+/* Mobile/Default */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+nav {
+  padding: 10px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+  height: 55px;
+}
+
+nav ul {
+  display: none;
+}
+nav ul li a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: rgb(60, 61, 61);
+  font-size: 21px;
+  padding: 15px 10px;
+  transition: background-color 0.4s linear, border-radius 0.6s linear, margin 0.8s linear;
+  &:hover {
+  background-color: rgb(233, 237, 237);
+  border-radius: 15px;
+  margin: 0 10px;
+};
+
+}
+
+/* nav ul li a:hover { 
+  background-color: rgb(233, 237, 237);
+  border-radius: 15px;
+  margin: 0 10px;
+}*/
+
+nav button {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: none;
+  border: none;
+  background-color: #256ce1;
+  padding: 15px 30px;
+  color: white;
+  font-size: 16px;
+  border-radius: 50px;
+  transition: background-color 0.5s linear, padding 0.2s linear,
+    border-radius 0.8s linear;
+}
+
+nav button:hover {
+  background-color: rgb(3, 23, 48);
+  padding: 18px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+nav h3 {
+  font-size: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 75px;
+}
+
+.hero div {
+  width: auto;
+  height: auto;
+}
+
+.statement div {
+  width: auto;
+  height: auto;
+}
+
+.hero div button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #1976d2;
+  border: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 17px 15px;
+  border-radius: 10px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.dashboard {
+  display: none;
+}
+
+.dashboard-img {
+  width: 100%;
+  height: 100%;
+}
+
+.section2-img {
+  width: 90%;
+  height: 75%;
+}
+
+.statement {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 75px;
+  margin-top: 40px;
+}
+
+section div h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 27px;
+  font-weight: bolder;
+  padding-right: 20px;
+}
+
+section div p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: rgb(60, 61, 61);
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+  body {
+  }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+  nav {
+    justify-content: space-evenly;
+    padding: 16px 85px 16px 60px;
+  }
+
+  nav h3 {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding-left: 0;
+  }
+  nav button {
+    display: flex;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 0 120px;
+  }
+
+  .statement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 0 120px;
+    margin-top: 0;
+  }
+
+  .hero div {
+    width: 50%;
+    height: auto;
+  }
+
+  .statement div {
+    width: 50%;
+    height: auto;
+  }
+
+  section div p {
+    padding-right: 50px;
+    font-size: 23px;
+  }
+
+  section div h1 {
+    padding-right: 35px;
+    font-size: 55px;
+  }
+
+  .dashboard {
+    display: unset;
+  }
+}
