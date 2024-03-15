@@ -8,10 +8,10 @@ body {
   margin: 0;
 }
 
- header{
+ /* header{
     position: sticky;
     top: 0;
-  }
+  } */
 
 nav {
   display: flex;
@@ -180,10 +180,10 @@ section div p {
 /* Laptop */
 @media only screen and (min-width: 1078px) {
 
-  /* header{
+  header{
     position: sticky;
     top: 0;
-  } */
+  }
 
   nav {
     justify-content: space-evenly;
