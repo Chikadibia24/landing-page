@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/styles/index.css">
+  <script src="./assets/js/main.js"></script>
   <title>Landing Page</title>
 </head>
 
@@ -12,14 +13,19 @@
   <nav>
     <a href="#"><img src="./assets/images/newlogo.73b2f7b4.png" alt="logo" class="logo" /></a>
     
-    <h3>=</h3>
-    <ul>
+    <h3 onclick="displayMenu()">=</h3>
+    <ul id="links-container">
+      <a href="#"><img src="./assets/images/newlogo.73b2f7b4.png" alt="logo" class="logo" /></a>
+
       <li><a href="#">Home</a></li>
       <li><a href="#">About Us</a></li>
       <li><a href="#">Services</a></li>
       <li><a href="#">Contact Us</a></li>
+
+      <button id="ul-btn">Sign Up</button>
     </ul>
-    <button>Sign Up</button>
+
+    <button class="nav-btn btn">Sign Up</button>
   </nav>
 </header>
 
@@ -29,7 +35,7 @@
       <div>
       <h1>Making Payment Easier With Wallet</h1>
     <p>Integrate mobile wallet systems into your solution today and enable seamless money transfer to and from your application</p>
-    <button>CREATE A FREE ACCOUNT</button>
+    <button class="btn">CREATE A FREE ACCOUNT</button>
       </div>
 
 

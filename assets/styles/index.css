@@ -5,13 +5,21 @@
 
 body {
   background-color: white;
+  margin: 0;
+}
+
+header{
+  position: sticky;
+  top: 0;
 }
 
 nav {
-  padding: 10px 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.97);
 }
 
 .logo {
@@ -19,20 +27,40 @@ nav {
   height: 35px;
 }
 
-nav ul {
-  display: none;
+#links-container {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: center;
+    background-color: rgba(255,255,255,0.98);
+    width: fit-content;
+    gap: 30px;
+    padding: 0 50px 0 50px;
+    height: 100vh;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    img{
+      margin-top: 28px;
+      margin-bottom: 160px;
+      display: initial;
+    }
+    button{
+      display: initial;
+    }
 }
 nav ul li a {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: none;
   color: rgb(60, 61, 61);
-  font-size: 21px;
+  font-size: 18px;
   padding: 15px 10px;
-  transition: background-color 0.4s linear, border-radius 0.6s linear, margin 0.8s linear;
+  transition: background-color 0.4s linear, border-radius 0.5s linear, margin 0.7s linear;
   &:hover {
   background-color: rgb(233, 237, 237);
   border-radius: 15px;
-  margin: 0 10px;
+  margin: 10px 0;
 };
 
 }
@@ -52,8 +80,7 @@ nav button {
   color: white;
   font-size: 16px;
   border-radius: 50px;
-  transition: background-color 0.5s linear, padding 0.2s linear,
-    border-radius 0.8s linear;
+  transition: background-color 0.5s linear, padding 0.3s linear, border-radius 0.8s linear;
 }
 
 nav button:hover {
@@ -75,6 +102,7 @@ nav h3 {
   flex-direction: column;
   gap: 30px;
   padding: 0 20px;
+  margin-top: 25px;
 }
 
 .hero div {
@@ -148,7 +176,8 @@ section div p {
 @media only screen and (min-width: 1078px) {
   nav {
     justify-content: space-evenly;
-    padding: 16px 85px 16px 60px;
+    padding: 20px 0;
+    background-color: rgba(255,255,255,0.98);
   }
 
   .logo {
@@ -160,11 +189,32 @@ section div p {
     display: none;
   }
 
-  nav ul {
+  nav ul li a{
+    font-size: 21px;
+    transition: background-color 0.4s linear, border-radius 0.5s linear, margin 0.7s linear;
+    &:hover {
+      background-color: rgb(233, 237, 237);
+      border-radius: 15px;
+      margin: 0 10px;
+    };
+  }
+
+  #links-container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: initial;
     gap: 50px;
+    padding: 0;
+    position:initial;
     list-style: none;
     padding-left: 0;
+    img{
+      display: none;
+    }
+    button{
+      display: none;
+    }
   }
   nav button {
     display: flex;
