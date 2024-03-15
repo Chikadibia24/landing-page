@@ -8,11 +8,6 @@ body {
   margin: 0;
 }
 
-header{
-  position: sticky;
-  top: 0;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -20,6 +15,8 @@ nav {
   padding: 0 20px;
   width: 100%;
   background-color: rgba(255,255,255,0.97);
+  position: fixed;
+  top: 0;
 }
 
 .logo {
@@ -31,19 +28,19 @@ nav {
     list-style: none;
     display: none;
     flex-direction: column;
-    /* justify-content: start; */
+    justify-content: start;
     align-items: center;
-    background-color: rgba(255,255,255,0.98);
+    background-color: rgba(255,255,255,1);
     width: fit-content;
     gap: 30px;
     padding: 0 50px 0 50px;
     height: 100vh;
     position: absolute;
-    top: -10px;
+    top: -15px;
     left: 0px;
     img{
       margin-top: 28px;
-      margin-bottom: 160px;
+      margin-bottom: 180px;
       display: initial;
     }
     button{
@@ -174,6 +171,12 @@ section div p {
 
 /* Laptop */
 @media only screen and (min-width: 1078px) {
+
+  header{
+    position: sticky;
+    top: 0;
+  }
+
   nav {
     justify-content: space-evenly;
     padding: 20px 0;
