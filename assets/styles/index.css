@@ -8,6 +8,11 @@ body {
   margin: 0;
 }
 
+ header{
+    position: sticky;
+    top: 0;
+  }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -15,8 +20,8 @@ nav {
   padding: 0 20px;
   width: 100%;
   background-color: rgba(255,255,255,0.97);
-  position: fixed;
-  top: 0;
+  /* position: fixed;
+  top: 0; */
 }
 
 .logo {
@@ -33,7 +38,8 @@ nav {
     background-color: rgba(255,255,255,1);
     width: fit-content;
     gap: 30px;
-    padding: 0 50px 0 50px;
+    padding: 0 50px 30px 50px;
+    overflow: auto;
     height: 100vh;
     position: absolute;
     top: -15px;
@@ -172,14 +178,14 @@ section div p {
 /* Laptop */
 @media only screen and (min-width: 1078px) {
 
-  header{
+  /* header{
     position: sticky;
     top: 0;
-  }
+  } */
 
   nav {
     justify-content: space-evenly;
-    padding: 20px 0;
+    padding: 0;
     background-color: rgba(255,255,255,0.98);
   }
 
@@ -208,8 +214,8 @@ section div p {
     align-items: center;
     height: initial;
     gap: 50px;
-    padding: 0;
-    position:initial;
+    padding: 30px 0;
+    position: initial;
     list-style: none;
     padding-left: 0;
     img{
