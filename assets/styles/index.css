@@ -15,8 +15,8 @@ nav {
 }
 
 .logo {
-  width: 250px;
-  height: 55px;
+  width: 165px;
+  height: 35px;
 }
 
 nav ul {
@@ -139,10 +139,10 @@ section div p {
 }
 
 /* Tablet */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   body {
   }
-}
+} */
 
 /* Laptop */
 @media only screen and (min-width: 1078px) {
@@ -150,6 +150,11 @@ section div p {
     justify-content: space-evenly;
     padding: 16px 85px 16px 60px;
   }
+
+  .logo {
+  width: 250px;
+  height: 55px;
+}
 
   nav h3 {
     display: none;
