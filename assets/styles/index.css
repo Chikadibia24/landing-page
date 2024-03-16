@@ -6,12 +6,13 @@
 body {
   background-color: white;
   margin: 0;
+  height: 100vh;
 }
 
- /* header{
+ header{
     position: sticky;
     top: 0;
-  } */
+  }
 
 nav {
   display: flex;
@@ -41,7 +42,7 @@ nav {
     padding: 0 50px 30px 50px;
     overflow: auto;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: -16px;
     left: 0px;
     a{
@@ -180,10 +181,10 @@ section div p {
 /* Laptop */
 @media only screen and (min-width: 1078px) {
 
-  header{
+  /* header{
     position: sticky;
     top: 0;
-  }
+  } */
 
   nav {
     justify-content: space-evenly;
